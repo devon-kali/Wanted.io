@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: #1e88e5;
+  color: white;
+  width: 20%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content {
+  background-color: white;
+  flex: 1;
+  padding: 20px;
+  overflow: auto;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: white;
+  color: #1e88e5;
+  border: 2px solid #1e88e5;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+input[type=file] {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+canvas {
+  border: 1px solid #ccc;
+  max-width: 100%;
+}

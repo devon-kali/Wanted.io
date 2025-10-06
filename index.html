@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanted.io: Face Recognition using OpenCV.js</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="sidebar">
+    <h2>Wanted.io</h2>
+    <h2>Training Panel</h2>
+    <label>Upload Training Images:</label>
+    <input type="file" id="trainImages" multiple accept="image/*">
+    <input type="text" id="personName" placeholder="Enter name">
+    <button id="addTrain">Add to Training</button>
+    <button id="trainBtn">Train</button>
+
+    <h2>Recognition</h2>
+    <label>Upload Test Image:</label>
+    <input type="file" id="testImage" accept="image/*">
+    <label>Threshold: <input type="number" id="threshold" value="0.5" step="0.05" min="0" max="1"></label>
+    <button id="recognizeBtn">Recognize</button>
+
+    <p id="status" style="font-weight:bold;color:#fff;">⏳ Loading OpenCV and cascade...</p>
+  </div>
+
+  <div class="content">
+    <h2>Results</h2>
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
